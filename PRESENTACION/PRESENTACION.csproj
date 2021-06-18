@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89313B43-F52D-4211-9CCB-149B725EC8C5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PRESENTACION</RootNamespace>
+    <AssemblyName>PRESENTACION</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EDIFICIOO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EDIFICIOO.Designer.cs">
+      <DependentUpon>EDIFICIOO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONSULTAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONSULTAR.Designer.cs">
+      <DependentUpon>CONSULTAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AREA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AREA.Designer.cs">
+      <DependentUpon>AREA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REGISTRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTRO.Designer.cs">
+      <DependentUpon>REGISTRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENUA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENUA.Designer.cs">
+      <DependentUpon>MENUA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENUG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENUG.Designer.cs">
+      <DependentUpon>MENUG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="USUARIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USUARIO.Designer.cs">
+      <DependentUpon>USUARIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visitasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>visitasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="visitasDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>visitasDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="visitasDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>visitasDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="visitasDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>visitasDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="visitasDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>visitasDataSet4.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EDIFICIOO.resx">
+      <DependentUpon>EDIFICIOO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONSULTAR.resx">
+      <DependentUpon>CONSULTAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AREA.resx">
+      <DependentUpon>AREA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENUA.resx">
+      <DependentUpon>MENUA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENUG.resx">
+      <DependentUpon>MENUG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="REGISTRO.resx">
+      <DependentUpon>REGISTRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USUARIO.resx">
+      <DependentUpon>USUARIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="visitasDataSet.xsc">
+      <DependentUpon>visitasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="visitasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>visitasDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="visitasDataSet.xss">
+      <DependentUpon>visitasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="visitasDataSet1.xsc">
+      <DependentUpon>visitasDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="visitasDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>visitasDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="visitasDataSet1.xss">
+      <DependentUpon>visitasDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="visitasDataSet2.xsc">
+      <DependentUpon>visitasDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="visitasDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>visitasDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="visitasDataSet2.xss">
+      <DependentUpon>visitasDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="visitasDataSet3.xsc">
+      <DependentUpon>visitasDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="visitasDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>visitasDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="visitasDataSet3.xss">
+      <DependentUpon>visitasDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="visitasDataSet4.xsc">
+      <DependentUpon>visitasDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="visitasDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>visitasDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="visitasDataSet4.xss">
+      <DependentUpon>visitasDataSet4.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ENTIDAD\ENTIDAD.csproj">
+      <Project>{01adfb0a-56fe-4307-be19-3bdc9eca8e3c}</Project>
+      <Name>ENTIDAD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NEGOCIO\NEGOCIO.csproj">
+      <Project>{3a08d8d7-87b1-4467-b8fc-4d988feb5f53}</Project>
+      <Name>NEGOCIO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
